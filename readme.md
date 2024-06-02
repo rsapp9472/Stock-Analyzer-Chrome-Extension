@@ -23,15 +23,9 @@ The extension uses a combination of HTML, CSS, and JavaScript to create a user-f
 To get started with `chat4o-stock-analyzer`, follow these steps:
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/chat4o-stock-analyzer.git
-   ```
+   ```git clone https://github.com/yourusername/chat4o-stock-analyzer.git```
 2. **Navigate to the Extension Directory**:
-
-   ```cd chat4o-stock-analyzer
-
-   ```
-
+   ```cd chat4o-stock-analyzer```
 3. **Load the Extension into Chrome**:
    - Open Chrome and navigate to chrome://extensions/
    - Enable Developer Mode by toggling the switch at the top-right.
@@ -51,16 +45,10 @@ To use this extension, an OpenAI API key is required. Follow these steps to conf
 
 1. Obtain an API key from OpenAI by creating an account at https://beta.openai.com/signup/.
 2. Create a .env file in the root of your project directory and add your API key
-
-   ```OPENAI_API_KEY='your_openai_api_key_here'
-
-   ```
+   ```OPENAI_API_KEY='your_openai_api_key_here'```
 
 3. Update background.js to read the API key from the .env file. Ensure this file is included in your .gitignore to prevent it from being pushed to remote repositories:
-
-   ```const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-
-   ```
+   ```const OPENAI_API_KEY = process.env.OPENAI_API_KEY;```
 
 ## Security Notice
 
