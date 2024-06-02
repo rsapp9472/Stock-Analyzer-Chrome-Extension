@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 550px; /* Increased width */
+  height: 550px; /* Set fixed height */
+  margin: 0 auto; /* Center the popup on the screen */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat {
+  flex-grow: 1; /* Makes the chat container grow to use available space */
+  overflow-y: auto; /* Adds a vertical scrollbar when necessary */
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  margin: 5px 5px;
+  max-height: 550px; /* Maximum height for the chat area */
+}
+
+.message {
+  margin: 5px 5px;
+}
+
+.user {
+  color: blue;
+}
+
+.assistant {
+  color: green;
+}
+
+#sendMessage {
+  width: 100px; /* Full width taking into account padding */
+  padding: 10px;
+  margin: 10px 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#capture,
+#deleteStorage {
+  width: 200px; /* Full width taking into account padding */
+  padding: 10px;
+  margin: 10px 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#capture:hover,
+#deleteStorage:hover,
+#sendMessage:hover {
+  background-color: #0056b3;
+}
+
+#inputContainer {
+  display: flex;
+  margin-top: auto; /* Pushes the input container to the bottom */
+}
+
+#userMessage {
+  flex: 1; /* Allows the input to expand */
+  padding: 10px;
+}
+
+.message {
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #d0e0ff;
+  align-self: flex-end;
+  text-align: right;
+  color: black;
+}
+
+.assistant {
+  background-color: #e0ffe0;
+  align-self: flex-start;
+  text-align: left;
+  color: black;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.message h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333; /* Darker text for headings */
+}
+
+.message ul {
+  padding-left: 20px; /* Indent lists for better readability */
+}
+
+.message li {
+  margin-bottom: 5px; /* Space out list items */
+}
