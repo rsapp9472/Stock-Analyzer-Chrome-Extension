@@ -1,4 +1,4 @@
-const OPENAIKEY = ""; // Use your actual OpenAI key
+const OPENAIKEY = "sk-proj-mdPSHYmzxM7jmKrVrZiXT3BlbkFJ0YisehOFTTs7xRGQHhQx"; // Use your actual OpenAI key
 
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.type === "deleteStorage") {
