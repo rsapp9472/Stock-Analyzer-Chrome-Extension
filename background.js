@@ -1,5 +1,4 @@
 const OPENAIKEY = "sk-proj-mdPSHYmzxM7jmKrVrZiXT3BlbkFJ0YisehOFTTs7xRGQHhQx";
-
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.type === "deleteStorage") {
     deleteStorage(sendResponse);
